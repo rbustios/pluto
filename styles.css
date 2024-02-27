@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: none;
+    background-color: none;
+    font-family: 'Inter';
+    color: white;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    /* background-color: rgba(15, 15, 15, 0.75); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.logo {
+    float: left;
+    padding-left: 50px;
+    background: none;
+    line-height: 100px;
+}
+
+.logo span {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.main-nav {
+    float: right;
+    padding-right: 50px;
+    background: none;
+    line-height: 90px;
+}
+
+.main-nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.main-nav a:hover {
+    color: #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    transition: 0.5s;
+}
+
+.navbar {
+    padding: 30px 0;
+}
+
+.main-slider {
+    text-align: center;
+}
+
+.main-slider img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*- HOME -*/
+
+.home-body {
+    overflow: hidden;
+    height: 100%;
+}
+
+#home-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -9999;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-indicators li {
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    margin-top: -2px;
+}
+
+.home-text {
+    width: 100%;
+    height: calc(100vh - 200px);
+    padding: 0 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.home-text h1 {
+    font-size: 72px;
+    width: 100%;
+}
+
+.home-text p {
+    width: 100%;
+}
+
+.home-text i {
+    color: #000;
+}
+
+.menu-mobile .btn:hover i {
+    color: black;
+    transition: 0.5s;
+}
+
+.modal-header,
+.list-group-item {
+    border: 0
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+}
+
+.modal-header .btn-close {
+    margin: auto;
+}
+
+.home-social-desktop {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.home-social-mobile {
+    display: flex;
+    gap: 10px;
+}
+
+.home-social-mobile i {
+    color: black;
+}
+
+.social-icon-desktop {
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icon-desktop:hover {
+    background-color: #fff;
+}
+
+.social-icon-desktop:hover i {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.social-icon-mobile {
+    color: #000;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-decoration: none;
+
+}
+
+.post-item-cont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.post-item-cont h2 {
+    padding: 30px 0;
+}
+
+.post-item {
+    width: 300px;
+    height: 400px;
+    margin: 0 10px;
+}
+
+.post-item-text {
+    background-color: #222222;
+    padding: 15px;
+    text-align: left;
+}
+
+.post-item h3 {
+    padding: 10px 0;
+}
+
+.post-item p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/*- FOOTER -*/
+
+footer {
+    width: 100%;
+    /* height: 650px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(15, 15, 15, 0.75);
+}
+
+.logo-foot {
+    width: 600px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px 50px;
+}
+
+.logo-foot img {
+    padding-bottom: 25px;
+    width: 100px;
+    height: auto;
+}
+
+.links-foot {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px 50px;
+}
+
+.links-foot h3 {
+    padding-bottom: 25px;
+}
+
+.links-foot a {
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    display: block;
+}
+
+.social-foot {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px 50px;
+}
+
+.social-foot h3 {
+    padding-bottom: 25px;
+}
+
+.social-foot a {
+    display: block;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.logo-end {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    mix-blend-mode: screen;
+}
+
+.logo-end-main {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.logo-end-holder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*- HISTORIA -*/
+
+.planet{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -9999;
+    padding: 10px 0;
+}
+
+.pluto-3d{
+    width: 20em;
+    height: 20em;
+    
+    background: url(./media/pluto-map.jpg);
+    box-shadow:
+        inset -2em -2em 2em #000,
+        -0.1em -0.1em 0.5em #fff;
+    position: relative;
+    animation: rotate 30s linear infinite,
+    orbit-pla 30s infinite ease-in-out;
+}
+.charon-3d{
+    background: url(./media/charon-map.jpg);
+    box-shadow: 
+        inset -1.5em -1.5em 1.5em #000;
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    left: -20em;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rotate 30s linear infinite,
+    orbit-sat 30s infinite ease-in-out;
+    z-index: 1;
+
+}
+.pluto-3d, .charon-3d{
+    border-radius: 50%;
+    background-repeat: repeat;
+    background-size: 200% 100%;
+}
+
+@keyframes rotate {
+    to{
+        background-position: -200% 0;
+    }
+}
+
+@keyframes orbit-pla {
+    0%  { left: 4em;  }
+    50% { left: -4em; }
+    100%{ left: 4em;  }
+}
+
+@keyframes orbit-sat {
+    0%  { width: 10em; height: 10em; }
+    25% { width: 12em; height: 12em; }
+    49% { z-index: 1; width: 10em; height: 10em; }
+    50% { z-index: -1; width: 10em; height: 10em; left: 30em; }
+    75% { width: 8em; height: 8em; }
+    99% { z-index: -1; width: 10em; height: 10em; }
+    100%{ z-index: 1; width: 10em; height: 10em; left: -20em; }
+}
+
+.history-main {
+    width: 100%;
+}
+
+.history-title {
+    width: 100%;
+    height: 150px;
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.history-title h1 {
+    font-size: 100px;
+    text-align: center;
+    font-weight: 100;
+    animation: in 5s ease-out forwards;
+    animation-delay: all 1s;
+}
+
+.history-title span {
+    opacity: 1;
+}
+
+.history-content {
+    padding-bottom: 50px;
+}
+
+.history-content p {
+    max-width: 600px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+
+.history-content-img {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.first-letter::first-letter {
+    initial-letter: 2;
+    padding-right: 5px;
+}
+
+@keyframes in {
+    0% {
+        letter-spacing: -15px;
+        opacity: 0;
+    }
+
+    30% {
+        letter-spacing: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        letter-spacing: 30px;
+        opacity: 1;
+    }
+}
+
+/*- EXPEDICIONES -*/
+
+.exped-cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exped-text {
+    position: absolute;
+    left: 15%;
+}
+
+.exped-text {
+    bottom: 2%;
+    font-size: 72px;
+}
+
+/*- MULTIMEDIA -*/
+
+.gallery {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 20%;
+    height: calc(100vh - 100px);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.2s ease-out;
+}
+
+.gallery-item-1,
+.gallery-item-2,
+.gallery-item-3,
+.gallery-item-4,
+.gallery-item-5 {
+    transition: opacity 0.2s ease-out;
+}
+
+.gallery-item-1::before {
+    opacity: .5;
+    background-image: url('./media/pluto.png');
+}
+
+.gallery-item-2::before {
+    opacity: .5;
+    background-image: url('./media/pluto-moons.jpg');
+}
+
+.gallery-item-3::before {
+    opacity: .5;
+    background-image: url('./media/new-horizons.jpg');
+}
+
+.gallery-item-4::before {
+    opacity: .5;
+    background-image: url('./media/saturno.jpg');
+}
+
+.gallery-item-5::before {
+    opacity: .5;
+    background-image: url('./media/kuiper-belt.jpg');
+}
+
+.gallery-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    opacity: 1;
+}
+
+.gallery-item:hover::before {
+    opacity: 1;
+}
+
+/*- CONTACTO -*/
+
+.main-contact {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.main-contact h1 {
+    font-size: 48px;
+}
+
+.main-contact form {
+    width: 50%;
+}
+
+.input-block {
+    padding: 5px 0;
+}
+
+.input-block label {
+    width: 150px;
+}
+
+input,
+option,
+textarea,
+select {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+button {
+    background-color: white;
+    color: black;
+    min-width: 100px;
+    padding: 7px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/*- MEDIA QUERIES -*/
+
+/*- Vista mobile -*/
+
+@media screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .home-social-desktop {
+        display: none;
+    }
+
+    .main-contact form {
+        width: 100%;
+    }
+
+    .gallery {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .history-title h1 {
+        font-size: 50px;
+        animation: in-m 5s ease-out forwards;
+    }
+
+    @keyframes in-m {
+        0% {
+            letter-spacing: -15px;
+            opacity: 0;
+        }
+    
+        30% {
+            letter-spacing: 15px;
+            opacity: 1;
+        }
+    
+        100% {
+            letter-spacing: 15px;
+            opacity: 1;
+        }
+    }
+
+}
+
+/*- Vista desktop -*/
+
+@media screen and (min-width: 769px) {
+    .menu-mobile {
+        display: none;
+    }
+}
