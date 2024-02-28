@@ -37,6 +37,30 @@ h6 {
     font-family: 'Playfair Display', serif;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
 /*- SELECTORES COMUNES -*/
 
 /*- NAVBAR -*/
@@ -178,6 +202,7 @@ footer {
     position: relative;
     overflow: hidden;
     mix-blend-mode: screen;
+    text-align: center;
 }
 
 .logo-end-main {
@@ -194,7 +219,9 @@ footer {
     top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
     height: auto;
+    padding: 0 10px;
     font-size: 10px;
 }
 
@@ -504,6 +531,7 @@ footer {
 
 .history-title h1 {
     font-size: 100px;
+    margin-left: 30px;
     text-align: center;
     font-weight: 100;
     animation: in 5s ease-out forwards;
@@ -520,13 +548,22 @@ footer {
 
 .history-content p {
     max-width: 600px;
-    padding-bottom: 25px;
+    padding: 10px;
     margin: 0 auto;
+    text-align: justify;
 }
 
-.history-content-img {
+.history-content-img{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.history-content-img img {
+    width: 100%;
+    /* height: auto; */
     text-align: center;
-    padding: 25px 0;
+    /* padding: 25px 0; */
 }
 
 .first-letter::first-letter {
@@ -553,37 +590,24 @@ footer {
 
 /*- EXPEDICIONES -*/
 
-.exped-main {
-    /* position: relative; */
-}
-
 .exped-cover {
-    /* height: 375px; */
     padding-top: 50px;
-}
-
-.exped-cover span {
-    /* font-family: 'Playfair Display', serif;
-    font-size: 250px;
-    color: #000000;
-    text-shadow: 0px 0px 25px rgba(255, 255, 255, .1);
-    padding-left: 50px;
-    position: absolute; */
-
 }
 
 .exped-cover h1 {
     font-size: 48px;
-    padding-left: 50px;
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%); */
+    text-align: center;
 }
 
-.exped-latest{
+.exped-latest {
     max-width: 600px;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 25px 10px;
+}
+
+.exped-latest img {
+    padding-bottom: 15px;
+    width: 100%;
 }
 
 .post-item-cont {
@@ -594,7 +618,7 @@ footer {
 
 .post-item {
     width: 300px;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 .post-item-text {
@@ -603,7 +627,8 @@ footer {
     text-align: left;
 }
 
-.post-item-text span, .post-item-text i{
+.post-item-text span,
+.post-item-text i {
     font-size: 12px;
     color: grey;
     padding-bottom: 10px;
@@ -618,13 +643,14 @@ footer {
     text-align: justify;
 }
 
-.exped-gall{
+.exped-gall {
     width: 100%;
     height: auto;
     text-align: center;
     padding: 50px 0;
 }
-.exped-gall h2{
+
+.exped-gall h2 {
     padding-bottom: 25px;
 }
 
@@ -852,6 +878,7 @@ button {
 
     .history-title h1 {
         font-size: 50px;
+        margin-left: 20px;
         animation: in-m 5s ease-out forwards;
     }
 
