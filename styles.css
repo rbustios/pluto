@@ -602,12 +602,20 @@ footer {
 .exped-latest {
     max-width: 600px;
     margin: 0 auto;
-    padding: 25px 10px;
+    padding: 50px 10px;
+}
+
+.exped-latest a{
+    text-decoration: none;
 }
 
 .exped-latest img {
     padding-bottom: 15px;
     width: 100%;
+}
+
+.exped-latest i{
+    color: #000;
 }
 
 .post-item-cont {
@@ -621,6 +629,15 @@ footer {
     margin: 10px;
 }
 
+.post-item-img{
+    height: 200px;
+}
+
+.post-item-img img{
+    width: 100%;
+    max-height: 100%;
+}
+
 .post-item-text {
     background-color: #222222;
     padding: 15px;
@@ -631,7 +648,7 @@ footer {
 .post-item-text i {
     font-size: 12px;
     color: grey;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .post-item h3 {
@@ -673,47 +690,47 @@ footer {
 }
 
 .photo-1 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-3.png');
 }
 
 .photo-2 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-4.jpg');
 }
 
 .photo-3 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-5.jpg');
 }
 
 .photo-4 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-6.jpg');
 }
 
 .photo-5 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-7.webp');
 }
 
 .photo-6 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-8.jpg');
 }
 
 .photo-7 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-9.webp');
 }
 
 .photo-8 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-10.jpg');
 }
 
 .photo-9 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-11.jpg');
 }
 
 .photo-10 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-12.jpg');
 }
 
 .photo-11 {
-    background-image: url('http://placehold.it/574x652');
+    background-image: url('./media/exped-13.webp');
 }
 
 /*- MULTIMEDIA -*/
@@ -939,6 +956,31 @@ button {
     .gallery-grid {
         grid-template-rows: repeat(3, 200px);
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .photo-1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .photo-2 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+    }
+
+    .photo-5{
+        grid-row: 2 / 4;
+        grid-column: 2 / 3;
+    }
+
+    .photo-8{
+        grid-row: 3 / 5;
+        grid-column: 1 / 2;
+    }
+
+    .photo-11{
+        grid-row: 4 / 5;
+        grid-column: 2 / 5;
     }
 }
 
