@@ -1,0 +1,119 @@
+.exped-cover {
+    padding-top: 50px;
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+}
+
+.exped-latest {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    img {
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+    i {
+        color: $p-color;
+    }
+}
+
+.post-item-cont {
+    @include flex(flex, row, center, flex-start);
+    flex-wrap: wrap;
+    .post-item {
+        width: 300px;
+        margin: 10px;
+        .post-item-img {
+            height: 200px;
+            img {
+                @extend .w-100;
+                max-height: 100%;
+            }
+        }
+        .post-item-text {
+            background-color: #222222;
+            padding: 15px;
+            text-align: left;
+            span, i{
+                font-size: 12px;
+                color: $t-color;
+                padding-bottom: 15px;
+            }
+            h3 {
+                padding-top: 10px;
+            }
+            p {
+                font-size: 14px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.exped-gall {
+    @extend .w-100;
+    height: auto;
+    text-align: center;
+    padding: 50px 0;
+    h2 {
+        padding-bottom: 25px;
+    }
+    .gallery-grid {
+        padding: 0 50px;
+        display: grid;
+        grid: {
+            gap: 10px;
+            template: {
+                rows: repeat(3, 200px);
+                columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            auto-rows: 200px;
+        }
+        .grid-photo {
+            @include flex(flex, row, center, center);
+            @extend .w-100;
+            background: {
+                size: cover;
+                position: center;
+            }
+        }
+        .photo-1 {
+            background-image: url('../media/exped-3.webp');
+        }
+        .photo-2 {
+            background-image: url('../media/exped-4.webp');
+        }
+        .photo-3 {
+            background-image: url('../media/exped-5.webp');
+        }
+        .photo-4 {
+            background-image: url('../media/exped-6.webp');
+        }
+        .photo-5 {
+            background-image: url('../media/exped-7.webp');
+        }
+        .photo-6 {
+            background-image: url('../media/exped-8.webp');
+        }
+        .photo-7 {
+            background-image: url('../media/exped-9.webp');
+        }
+        .photo-8 {
+            background-image: url('../media/exped-10.webp');
+        }
+        .photo-9 {
+            background-image: url('../media/exped-11.webp');
+        }
+        .photo-10 {
+            background-image: url('../media/exped-12.webp');
+        }
+        .photo-11 {
+            background-image: url('../media/exped-13.webp');
+        }
+    }
+}

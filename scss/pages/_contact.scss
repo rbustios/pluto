@@ -1,0 +1,13 @@
+.main-contact {
+    @extend .w-100;
+    @include flex(flex, row, center, center);
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
+    h1 {
+        font-size: 48px;
+    }
+    form {
+        width: 50%;
+    }
+}

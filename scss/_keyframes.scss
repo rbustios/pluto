@@ -1,0 +1,79 @@
+@keyframes rotate {
+    to {
+        background-position: -200% 0;
+    }
+}
+
+@keyframes orbit-pla {
+    0% {
+        left: 4em;
+    }
+
+    50% {
+        left: -4em;
+    }
+
+    100% {
+        left: 4em;
+    }
+}
+
+@keyframes orbit-sat {
+    0% {
+        width: 10em;
+        height: 10em;
+    }
+
+    25% {
+        width: 12em;
+        height: 12em;
+    }
+
+    49% {
+        z-index: 1;
+        width: 10em;
+        height: 10em;
+    }
+
+    50% {
+        z-index: -1;
+        width: 10em;
+        height: 10em;
+        left: 30em;
+    }
+
+    75% {
+        width: 8em;
+        height: 8em;
+    }
+
+    99% {
+        z-index: -1;
+        width: 10em;
+        height: 10em;
+    }
+
+    100% {
+        z-index: 1;
+        width: 10em;
+        height: 10em;
+        left: -20em;
+    }
+}
+
+@keyframes title-in {
+    0% {
+        letter-spacing: -15px;
+        opacity: 0;
+    }
+
+    30% {
+        letter-spacing: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        letter-spacing: 30px;
+        opacity: 1;
+    }
+}

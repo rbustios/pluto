@@ -1,0 +1,90 @@
+.history-main {
+    width: 100%;
+    .planet {
+        @extend .history-main;
+        overflow: hidden;
+        @include flex(flex, row, center, center);
+        z-index: -9999;
+        padding: 10px 0;
+        .pluto-3d{
+            width: 20em;
+            height: 20em;
+            background: url('../media/pluto-map.webp');
+            box-shadow: inset -2em -2em 2em $p-color, -0.1em -0.1em 0.5em $s-color;
+            position: relative;
+            animation: rotate 30s linear infinite, orbit-pla 30s infinite ease-in-out;
+            border-radius: 50%;
+            background-repeat: repeat;
+            background-size: 200% 100%;
+            .charon-3d {
+                background: url('../media/charon-map.webp');
+                box-shadow: inset -1.5em -1.5em 1.5em $p-color;
+                width: 10em;
+                height: 10em;
+                position: absolute;
+                left: -20em;
+                top: 50%;
+                transform: translateY(-50%);
+                animation: rotate 30s linear infinite, orbit-sat 30s infinite ease-in-out;
+                z-index: 1;
+                border-radius: 50%;
+                background-repeat: repeat;
+                background-size: 200% 100%;
+            }
+        }
+    }
+    .history-title {
+        @extend .history-main;
+        height: 150px;
+        margin: 50px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            font-size: 100px;
+            margin-left: 30px;
+            text-align: center;
+            font-weight: 100;
+            animation: title-in 5s ease-out forwards;
+            animation-delay: all 1s;
+        }
+        span {
+            opacity: 1;
+        }
+    }
+    .history-content-img {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 50px;
+        img {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .history-content {
+        padding-bottom: 50px;
+        p {
+            max-width: 600px;
+            padding: 10px 50px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+    }
+}
+
+.first-letter{
+    &::first-letter{
+        initial-letter: 2;
+        padding-right: 5px;
+    }
+}

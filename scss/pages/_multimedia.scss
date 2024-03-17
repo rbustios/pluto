@@ -1,0 +1,82 @@
+.gallery {
+    width: 100%;
+    height: calc(100vh - 100px);
+    @include flex(flex, row, space-around, center);
+    flex-wrap: wrap;
+    align-content: center;
+    .gallery-item {
+        width: 20%;
+        height: calc(100vh - 100px);
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: {
+                size: cover;
+                position: center;
+            }
+            transition: opacity 0.2s ease-out;
+        }
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $s-color;
+            font: {
+                size: 24px;
+                family: $titulo;
+            }
+            opacity: 1;
+            text-shadow: 0 0 10px $p-color, 0 0 10px $p-color;
+        }
+        &:hover{
+            &::before{
+                opacity: 1;
+                transform: scale(1.02);
+                transition: transform 0.2s;
+            }
+        }
+    }
+    .gallery-item-1{
+        transition: opacity 0.2s ease-out;
+        &::before {
+            opacity: .5;
+            background-image: url('../media/pluto.webp');
+        }
+    }
+    .gallery-item-2{
+        transition: opacity 0.2s ease-out;
+        &::before{
+            opacity: .5;
+            background-image: url('../media/pluto-moons.webp');
+        }
+    }
+    .gallery-item-3{
+        transition: opacity 0.2s ease-out;
+        &::before{
+            opacity: .5;
+            background-image: url('../media/new-horizons.webp');
+        }
+    }
+    .gallery-item-4{
+        transition: opacity 0.2s ease-out;
+        &::before{
+            opacity: .5;
+            background-image: url('../media/saturno.webp');
+        }
+    }
+    .gallery-item-5{
+        transition: opacity 0.2s ease-out;
+        &::before{
+            opacity: .5;
+            background-image: url('../media/kuiper-belt.webp');
+        }
+    }
+}
