@@ -584,7 +584,7 @@ footer .social-foot ul li a {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -592,7 +592,7 @@ footer .social-foot ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
+  padding: 35px;
 }
 .history-main .history-family .p-family .sec1 img, .history-main .history-family .p-family .sec2 img, .history-main .history-family .p-family .sec3 img, .history-main .history-family .p-family .sec4 img, .history-main .history-family .p-family .sec5 img, .history-main .history-family .p-family .sec6 img {
   width: 50px;
@@ -620,7 +620,7 @@ footer .social-foot ul li a {
   width: 50%;
   min-height: 350px;
   background-color: #111111;
-  background-image: url("../../media/iau.webp");
+  background-image: url("../media/iau.webp");
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px;
@@ -640,8 +640,12 @@ footer .social-foot ul li a {
 }
 .history-main .history-video h2 {
   padding-bottom: 25px;
+  text-align: center;
 }
 .history-main .history-video iframe {
+  width: 100%;
+  max-width: 560px;
+  max-height: 315px;
   padding: 5px;
   background-color: #111111;
 }
@@ -657,6 +661,7 @@ footer .social-foot ul li a {
 }
 .history-main .history-identity h2 {
   padding-bottom: 25px;
+  text-align: center;
 }
 .history-main .history-identity .history-identity-blocks {
   display: flex;
