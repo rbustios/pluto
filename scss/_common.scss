@@ -57,15 +57,22 @@
             list-style: none;
             display: inline-block;
             padding: 0 10px;
-            a {
+            .active{
                 color: $s-color;
+                border-bottom: 1px solid $s-color;
+                &:hover{
+                    color: $s-color;
+                }
+            }
+            a {
+                color: $t-color;
                 text-decoration: none;
                 transition: 0.5s;
                 &:hover {
-                    color: $t-color;
-                    border-bottom: 1px solid $t-color;
-                    transition: 0.5s;
+                    color: $s-color;
+                    border-bottom: 1px solid $s-color;
                 }
+                
             }
         }
     }
@@ -165,3 +172,50 @@ footer {
         object-fit: cover;
     }
 }
+
+// SCROLL UP
+
+.scrollup{
+    all: unset;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: $p-color;
+    border: 1px solid $s-color;
+    border-radius: 50%;
+    @include flex(flex, row, center, center);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    .fa-arrow-up{
+        pointer-events: none;
+        font-size: 20px;
+        transition: background-color 0.2s;
+    }
+    &:hover{
+        background-color: $s-color;
+        .fa-arrow-up{
+            color: $p-color;
+        }
+    }
+}
+
+// STARS
+
+.star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    animation-name: twinkle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: -9999;
+  }
+  
+  @keyframes twinkle {
+    0% { opacity: 0.8 }
+    50% { opacity: 0 }
+    100% { opacity: 0.8 }
+  }

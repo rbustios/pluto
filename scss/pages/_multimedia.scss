@@ -4,6 +4,7 @@
     @include flex(flex, row, space-around, center);
     flex-wrap: wrap;
     align-content: center;
+    background-color: $p-color;
     .gallery-item {
         width: 20%;
         height: calc(100vh - 100px);
@@ -39,7 +40,7 @@
         &:hover{
             &::before{
                 opacity: 1;
-                transform: scale(1.02);
+                transform: scale(1.05);
                 transition: transform 0.2s;
             }
         }

@@ -30,19 +30,20 @@
         margin: 10px;
         .post-item-img {
             height: 200px;
+            overflow: hidden;
+            @include flex(flex, row, center, center);
             img {
                 @extend .w-100;
-                max-height: 100%;
             }
         }
         .post-item-text {
             background-color: #222222;
             padding: 15px;
             text-align: left;
-            span, i{
+            .exped-update{
                 font-size: 12px;
                 color: $t-color;
-                padding-bottom: 15px;
+                margin-bottom: 15px;
             }
             h3 {
                 padding-top: 10px;
@@ -50,6 +51,14 @@
             p {
                 font-size: 14px;
                 text-align: justify;
+            }
+            .exped-v-more{
+                a{
+                    @include flex(flex, row, center, center);
+                    i{
+                        color: $p-color;
+                    }
+                }
             }
         }
     }
