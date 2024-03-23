@@ -6,63 +6,79 @@
     }
 }
 
-.exped-latest {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 50px;
-    img {
-        padding-bottom: 15px;
-        width: 100%;
-    }
-    a {
-        text-decoration: none;
-    }
-    i {
-        color: $p-color;
-    }
-}
-
-.post-item-cont {
+.exped-news{
     @include flex(flex, row, center, flex-start);
-    flex-wrap: wrap;
-    .post-item {
-        width: 300px;
-        margin: 10px;
-        .post-item-img {
-            height: 200px;
-            overflow: hidden;
-            @include flex(flex, row, center, center);
-            img {
-                @extend .w-100;
-            }
+    padding: 50px;
+    max-width: 1024px;
+    margin: 0 auto;
+    .exped-latest {
+        width: 40%;
+        // height: 800px;
+        padding: 25px;
+        img {
+            padding-bottom: 15px;
+            width: 100%;
         }
-        .post-item-text {
-            background-color: #222222;
-            padding: 15px;
-            text-align: left;
-            .exped-update{
-                font-size: 12px;
-                color: $t-color;
-                margin-bottom: 15px;
+        a {
+            text-decoration: none;
+        }
+        i {
+            color: $p-color;
+        }
+    }
+    .post-item-cont {
+        @include flex(flex, column, center, flex-start);
+        flex-wrap: wrap;
+        width: 60%;
+        .post-item {
+            width: 100%;
+            height: 400px;
+            padding: 25px;
+            @include flex(flex, row, center, center);
+            .post-item-img {
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                @include flex(flex, row, center, center);
+                img {
+                    max-height: 100%;
+                }
             }
-            h3 {
-                padding-top: 10px;
-            }
-            p {
-                font-size: 14px;
-                text-align: justify;
-            }
-            .exped-v-more{
-                a{
-                    @include flex(flex, row, center, center);
-                    i{
-                        color: $p-color;
+            .post-item-text {
+                width: 50%;
+                height: 100%;
+                background-color: #222222;
+                padding: 15px;
+                text-align: left;
+                @include flex(flex, column, center, initial);
+                .exped-update{
+                    font-size: 12px;
+                    color: $t-color;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    padding-top: 10px;
+                }
+                p {
+                    font-size: 14px;
+                    text-align: justify;
+                }
+                .exped-v-more{
+                    a{
+                        @include flex(flex, row, center, center);
+                        i{
+                            color: $p-color;
+                        }
                     }
                 }
             }
         }
     }
 }
+
+
+
+
 
 .exped-gall {
     @extend .w-100;
