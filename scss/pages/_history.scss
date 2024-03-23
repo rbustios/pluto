@@ -147,17 +147,54 @@
         }
         .p-family{
             width: 100%;
-            @include flex(flex, row, center, center);
+            @include flex(flex, row, center, flex-end);
             flex-wrap: wrap;
             .sec1, .sec2, .sec3, .sec4, .sec5, .sec6{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding: 35px;
+            }
+            .sec1{
                 img{
-                    width: 50px;
+                    width: 200px;
                     height: auto;
-                    padding-bottom: 15px
+                    padding-bottom: 15px;
+                }
+            }
+            .sec2{
+                img{
+                    width: 104px;
+                    height: auto;
+                    padding-bottom: 15px;
+                }
+            }
+            .sec3{
+                img{
+                    width: 6px;
+                    height: auto;
+                    padding-bottom: 15px;
+                }
+            }
+            .sec4{
+                img{
+                    width: 20px;
+                    height: auto;
+                    padding-bottom: 15px;
+                }
+            }
+            .sec5{
+                img{
+                    width: 8px;
+                    height: auto;
+                    padding-bottom: 15px;
+                }
+            }
+            .sec6{
+                img{
+                    width: 16px;
+                    height: auto;
+                    padding-bottom: 15px;
                 }
             }
         }
@@ -199,10 +236,9 @@
         }
         iframe{
             width: 100%;
-            max-width: 560px;
-            max-height: 315px;
+            aspect-ratio: 16 / 9;
             padding: 5px;
-            background-color: $footer;
+            background-color: $s-color;
         }
     }
 
