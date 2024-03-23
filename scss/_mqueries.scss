@@ -24,10 +24,6 @@
         display: none;
     }
 
-    .main-contact form {
-        width: 100%;
-    }
-
     .gallery {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -102,6 +98,21 @@
                         max-height: initial;
                         width: 100%;
                     }
+                }
+            }
+        }
+    }
+
+    .main-contact{
+        .contact-formmap{
+            flex-direction: column;
+            form{
+                width: 100%;
+            }
+            .map{
+                width: 100%;
+                h4{
+                    text-align: center;
                 }
             }
         }

@@ -80,7 +80,7 @@ button {
   cursor: pointer;
 }
 
-.w-100, .main-contact, .exped-gall .gallery-grid .grid-photo, .exped-gall, .home-text p, .home-text h1, .home-text {
+.w-100, .exped-gall .gallery-grid .grid-photo, .exped-gall, .home-text p, .home-text h1, .home-text {
   width: 100%;
 }
 
@@ -857,7 +857,6 @@ footer .social-foot ul li a {
 }
 .exped-news .post-item-cont .post-item .post-item-text p {
   font-size: 14px;
-  text-align: justify;
 }
 .exped-news .post-item-cont .post-item .post-item-text .exped-v-more a {
   display: flex;
@@ -1009,6 +1008,8 @@ footer .social-foot ul li a {
 }
 
 .main-contact {
+  max-width: 1024px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1019,27 +1020,29 @@ footer .social-foot ul li a {
 }
 .main-contact h1 {
   font-size: 48px;
+  padding-bottom: 75px;
 }
-.main-contact form {
+.main-contact .contact-formmap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+.main-contact .contact-formmap form {
   width: 50%;
 }
-
-.map {
+.main-contact .contact-formmap .map {
+  width: 50%;
+}
+.main-contact .contact-formmap .map h4 {
+  padding-bottom: 20px;
+}
+.main-contact .contact-formmap .map iframe {
   width: 100%;
-  height: 300px;
+  height: 540px;
   filter: grayscale(100%) invert(92%) contrast(83%);
-}
-
-.location-contact {
-  width: 100%;
-  padding: 25px 0;
-}
-.location-contact hr {
-  opacity: 1;
-}
-.location-contact h2 {
-  padding-top: 10px;
-  text-align: center;
 }
 
 /*- Reglas comunes para vista mobile -*/
@@ -1061,9 +1064,6 @@ footer .social-foot ul li a {
   }
   .home-social-desktop {
     display: none;
-  }
-  .main-contact form {
-    width: 100%;
   }
   .gallery {
     flex-wrap: nowrap;
@@ -1136,6 +1136,18 @@ footer .social-foot ul li a {
   .exped-news .post-item-cont .post-item .post-item-img img {
     max-height: initial;
     width: 100%;
+  }
+  .main-contact .contact-formmap {
+    flex-direction: column;
+  }
+  .main-contact .contact-formmap form {
+    width: 100%;
+  }
+  .main-contact .contact-formmap .map {
+    width: 100%;
+  }
+  .main-contact .contact-formmap .map h4 {
+    text-align: center;
   }
   @keyframes in-m {
     0% {

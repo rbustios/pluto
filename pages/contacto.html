@@ -74,56 +74,65 @@
 
     <main class="main-contact">
         <h1>Contáctanos</h1>
-        <p>Conéctate con nosotros para compartir tu fascinación por Plutón. Estamos aquí para responder preguntas,
-            recibir comentarios o colaborar en proyectos relacionados con este intrigante planeta. ¡Únete a nuestra
-            comunidad y explora el cosmos juntos!</p>
 
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Nombres</label>
-                <input type="text" class="form-control rounded-0" id="name" required autocomplete="name">
-            </div>
-            <div class="mb-3">
-                <label for="lname" class="form-label">Apellidos</label>
-                <input type="text" class="form-control rounded-0" id="lname" required autocomplete="additional-name">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control rounded-0" id="email" aria-describedby="emailHelp" required
-                    autocomplete="email">
-                <div id="emailHelp" class="form-text">No compartiremos tu dirección de correo con nadie.</div>
-            </div>
-            <div class="mb-3">
-                <label for="phone" class="form-label">Celular</label>
-                <input type="number" class="form-control rounded-0" id="phone" required autocomplete="tel">
-            </div>
-            <div class="mb-3">
-                <label for="consulta" class="form-label">Consulta</label>
-                <select class="form-select rounded-0" id="consulta" required>
-                    <option selected></option>
-                    <option value="1">Sugerencia</option>
-                    <option value="2">Opinión</option>
-                    <option value="3">Colaboración</option>
-                    <option value="4">Otro</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control rounded-0" id="mensaje" aria-label="With textarea" rows="4"
-                    required></textarea>
-            </div>
-            <button type="submit" class="btn btn-light rounded-0">Enviar</button>
-            <button type="reset" class="btn btn-dark rounded-0">Limpiar</button>
-        </form>
-
-        <section class="location-contact">
-            <hr>
-            <h2>Oficinas centrales de investigación</h2>
+        <section class="contact-text">
+            <p>Conéctate con nosotros para compartir tu fascinación por Plutón. Estamos aquí para responder preguntas,
+                recibir comentarios o colaborar en proyectos relacionados con este intrigante planeta. ¡Únete a nuestra
+                comunidad y explora el cosmos juntos!</p>
         </section>
 
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179980.62154775986!2d-90.50528770285226!3d33.048964632947666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629898cf0ef5135%3A0x638f6a15b3277621!2sPluto%2C%20MS%2039169%2C%20USA!5e0!3m2!1sen!2spe!4v1710821284264!5m2!1sen!2spe"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="contact-formmap">
+
+            <form class="form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombres</label>
+                    <input type="text" class="form-control rounded-0" id="name" required autocomplete="name">
+                </div>
+                <div class="mb-3">
+                    <label for="lname" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control rounded-0" id="lname" required
+                        autocomplete="additional-name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control rounded-0" id="email" aria-describedby="emailHelp" required
+                        autocomplete="email">
+                    <div id="emailHelp" class="form-text">No compartiremos tu dirección de correo con nadie.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Celular</label>
+                    <input type="number" class="form-control rounded-0" id="phone" required autocomplete="tel">
+                </div>
+                <div class="mb-3">
+                    <label for="consulta" class="form-label">Consulta</label>
+                    <select class="form-select rounded-0" id="consulta" required>
+                        <option selected></option>
+                        <option value="1">Sugerencia</option>
+                        <option value="2">Opinión</option>
+                        <option value="3">Colaboración</option>
+                        <option value="4">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control rounded-0" id="mensaje" aria-label="With textarea" rows="4"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-light rounded-0">Enviar</button>
+                <button type="reset" class="btn btn-dark rounded-0">Limpiar</button>
+            </form>
+
+            <div class="map">
+
+                <h4><i class="fa-solid fa-book"></i> Oficinas centrales de investigación</h4>
+
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179980.62154775986!2d-90.50528770285226!3d33.048964632947666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629898cf0ef5135%3A0x638f6a15b3277621!2sPluto%2C%20MS%2039169%2C%20USA!5e0!3m2!1sen!2spe!4v1710821284264!5m2!1sen!2spe"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
 
     </main>
 
